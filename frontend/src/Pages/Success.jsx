@@ -8,7 +8,7 @@ function Success() {
 
   useEffect(() => {
     // Fetch the success message from the backend (if needed)
-    fetch(https://plant-bazaar.onrender.com/success')
+    fetch('https://plant-bazaar.onrender.com/success')
       .then((response) => response.json())  // Parse JSON response
       .then((data) => setMessage(data.message || 'Payment Successful!'))  // Set message state
       .catch((error) => console.error('Error fetching success message:', error));
